@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = EmojifiRb::VERSION
   spec.authors       = ["Daniel Martinez"]
   spec.email         = ["eduardodaniel2@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = %q{Procrastination level: I have a script that turns things into emojis!}
+  spec.description   = %q{Procrastination level: I have a script that turns things into emojis! 👨👶👴👹👽👸"}
+  spec.homepage      = "https://github.com/edmt/emojifi_rb"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -19,5 +19,5 @@ Gem::Specification.new do |spec|
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.6"
-  spec.add_development_dependency "rake"
+  spec.add_development_dependency "rake", "~> 10.3"
 end
