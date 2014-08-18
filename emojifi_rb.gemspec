@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["eduardodaniel2@gmail.com"]
   spec.summary       = %q{Procrastination level: I have a script that turns things into emojis!}
   spec.description   = %q{Procrastination level: I have a script that turns things into emojis! 👨👶👴👹👽👸"}
-  spec.homepage      = "https://github.com/edmt/emojifi_rb"
+  spec.homepage      = "https://github.com/edmt/emojifi.rb"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")
@@ -20,5 +20,5 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.6"
   spec.add_development_dependency "rake", "~> 10.3"
-  spec.add_development_dependency "docopt", "~> 0.5"
+  spec.add_runtime_dependency 'docopt', '~> 0.5', '~> 0.5'
 end
