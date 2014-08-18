@@ -1,4 +1,3 @@
 source 'https://rubygems.org'
 
-# Specify your gem's dependencies in emojifi_rb.gemspec
-gemspec
+gem 'docopt', '~> 0.5.0'

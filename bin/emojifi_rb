@@ -1,3 +1,33 @@
 #!/usr/bin/env ruby
 
 require 'emojifi_rb'
+require "docopt"
+
+doc = <<DOCOPT
+emojifi_rb.
+
+With no options, emojifi_rb reads raw data from stdin and writes encoded data as a block of emojis to stdout.
+
+Usage:
+  emojifi_rb <input>
+  emojifi_rb -D | --decode <input>
+  emojifi_rb -h | --help
+  emojifi_rb -v | --version
+
+Options:
+  -h --help     Show this screen.
+  -v --version  Show version.
+  -D --decode   Decode incoming emoji string into readable strings.
+
+DOCOPT
+
+begin
+  args = Docopt::docopt(doc)
+  if args.fetch "--decode"
+    puts EmojifiRb.decode args.fetch "<input>"
+  else
+    puts EmojifiRb.encode args.fetch "<input>"
+  end
+rescue Docopt::Exit => e
+  puts e.message
+end
